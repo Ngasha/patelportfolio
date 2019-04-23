@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<body>
+
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#" V-for="message in message">{{message}}</a>
+          </div>
+        </div>
+
+
+        <script src="https://unpkg.com/vue"></script>
+        <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+
+        var myObject = new Vue({
+            el: '.overlay-content',
+            data: {message: ['About','Skills','Team','Contact']}
+        })
+        </script>
+
+        <!-------body section-->
+        <section>
+
+
+        </section>
+        <span onclick="openNav()">&#9776; Ng'ash</span>
+        <div class="home-content">
+            <img src="ngash.jpg" alt="ngash" class="ngash-image">
+            <h1 class="title-w">Web Developer</h1>
+        </div>
+
+        <div class="about-n">
+              <h2>About Me</h2>
+              <img src="weru.jpg" alt="weru" class="weru-n">
+              <p>Passionate front-end web Developer Nairobi, Kenya. loves learning new things and also very innovative. An entrepreneur and a strategist<br/>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do sunt explicabo. Nemo enim ipsam et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+
+      <!-- projects -->
+      <div class="projects-n">
+        <div class="pro-content">
+          
+        </div>
+      </div>
+            
+</body>
+</html>
