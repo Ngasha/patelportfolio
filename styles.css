@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    /* display: flex; */
 }
 
 * {
@@ -69,8 +70,13 @@ body{
 
 
 /* Position text in the middle of the page/image */
+.home-wrapper{
+  display: flex;
+  flex-wrap: row wrap;
+  text-align: center;
+}
 .home-content{
-  background-color: rgba(15, 15, 14, 0.911); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.611); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.432); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
@@ -83,7 +89,8 @@ body{
   z-index: 0;
   width: 40%;
   padding: 16px;
-  text-align: center;
+
+  
 }
 
 
@@ -95,6 +102,8 @@ section{
   background-size: cover;
   filter: blur(3px);
   -webkit-filter: blur(3px);
+  display: flex;
+
 }
   img.ngash-image{
     height: 100px;
@@ -122,13 +131,23 @@ section{
 
 
   /* about ngash about-n */
-  .about-n{
+  .wrapper-about{
+    display: flex;
+    flex-wrap: row wrap;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 85vh;
     background: linear-gradient(to top left, rgb(237, 243, 243) 40%, rgba(109, 175, 206, 0.87) 60%),
     linear-gradient(to bottom left, rgb(248, 81, 81) 44%, rgba(10, 10, 10, 0.815) 28%); 
    }
-
-
+   .wrapper-about > *{
+    padding: 10px;
+    flex: 1 100%;
+   }
+   .main-about{
+     text-align: left;
+     color: #111;
+   }
   .about-n h2{
     text-align: center;
     font-size: 24px;
@@ -162,8 +181,28 @@ section{
 
   /* projects project-n */
   .projects-n{
+    display: flex;
     height: 60vh;
     background-color: rgba(210, 217, 223, 0.342);
-    display: flex;
+    /* display: flex; */
 
+  }
+
+
+
+
+
+
+  @media screen and (max-width:959px){
+    .home-wrapper{
+      display: flex;
+      flex-wrap: wrap
+    }
+    .home-content{
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 16px;
+      height: 250px;
+      width: 56%;
+    }
   }
