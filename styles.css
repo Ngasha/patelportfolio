@@ -330,4 +330,18 @@ h3.skills-h {
       margin-top:4px;
       background: linear-gradient(to right,#ff8a00,#da1b60);
     } 
+    .skills-s{
+      display: flex;
+      flex-wrap: row wrap;
+      height: 60vh;
+      background-color:#FFF;
+      text-align: center;
+      justify-content: center;
+    }
+    .projects-n{
+      display: flex;
+      flex-wrap: row wrap;
+      height: 90vh;
+      text-align: center;
+    }
   }
