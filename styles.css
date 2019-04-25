@@ -216,23 +216,27 @@ h3.about-h {
   text-align: center;
   /* display: flex;
   flex-wrap: wrap; */
-  padding: 16px;
-  justify-content: space-between;
+  /* padding: 16px; */
+  margin: auto;
+  justify-content: space-around;
   
 }
-h3.skills-h {
-  color: rgb(187, 35, 30);
-  z-index: 2;
+.skills-s h3{
+  color: rgb(23, 26, 23);
+  font-size: 24px;
+
+  z-index: 0;
   font-family: monospace;
   text-decoration-line: underline;
-  text-align: center;
+  margin: auto;
+  position: absolute;
   padding: 6px;
   
 }
 /* skills */
 .java-s{
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   background-color: #ffd000;
   /* padding: 8px; */
@@ -247,8 +251,8 @@ h3.skills-h {
   padding-bottom: 2px;
 }
 .css-s{
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   background-color: #25098a;
   /* padding: 8px; */
@@ -256,17 +260,17 @@ h3.skills-h {
  
 }
 .php-s{
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   background-color: #6d8fc4;
   /* padding: 8px; */
-  /* text-align: center; */
+  text-align: center; 
  
 }
 .vue-s{
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
   background-color: #51bf3b;
   /* padding: 8px; */
