@@ -184,23 +184,24 @@ section{
     display: flex;
     flex-wrap: row wrap;
     height: 70vh;
-    background-color: rgba(210, 217, 223, 0.068);
-
+    background: linear-gradient(to top left, rgb(237, 243, 243) 40%, rgba(109, 175, 206, 0.87) 60%),
+    linear-gradient(to bottom left, rgb(248, 81, 81) 44%, rgba(10, 10, 10, 0.815) 28%);
+    text-align: center;
   }
 
 .pro-content{
-  display: flex;
-  flex-wrap: wrap;
+  font-size: 22px;
   height: 55vh;
-  text-align: center;
-  padding: 20px;
-  flex-grow: 4;
-}
-.box-container{
-  height: 40vh;
-  background-color: rgba(32, 30, 30, 0.671);
-  color: #FFF;
+  line-height: 1.5;
   font-family: serif;
+}
+
+
+h3.about-h {
+  color: cornsilk;
+  z-index: 2;
+  font-family: monospace;
+  text-decoration-line: underline;
 }
 
 
