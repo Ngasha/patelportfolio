@@ -184,7 +184,7 @@ section{
     display: flex;
     flex-wrap: row wrap;
     height: 70vh;
-    background: linear-gradient(to top left, rgb(237, 243, 243) 40%, rgba(109, 175, 206, 0.87) 60%),
+    background: linear-gradient(to top left, rgb(237, 243, 243) 40%, rgba(44, 149, 197, 0.87) 60%),
     linear-gradient(to bottom left, rgb(248, 81, 81) 44%, rgba(10, 10, 10, 0.815) 28%);
     text-align: center;
   }
@@ -203,6 +203,104 @@ h3.about-h {
   font-family: monospace;
   text-decoration-line: underline;
 }
+/* project skills */
+.skills-s{
+  display: flex;
+  flex-wrap: row wrap;
+  height: 70vh;
+  background-color: #fdf2f2;
+  text-align: center;
+  justify-content: center;
+}
+.skills-c{
+  text-align: center;
+  /* display: flex;
+  flex-wrap: wrap; */
+  padding: 16px;
+  justify-content: space-between;
+  
+}
+h3.skills-h {
+  color: rgb(187, 35, 30);
+  z-index: 2;
+  font-family: monospace;
+  text-decoration-line: underline;
+  text-align: center;
+  padding: 6px;
+  
+}
+/* skills */
+.java-s{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffd000;
+  /* padding: 8px; */
+  margin-left: 40px;
+  /* text-align: center; */
+ 
+}
+.java-s h4{
+  text-align: center;
+  font-size: 26px;
+  color: aliceblue;
+  padding-bottom: 2px;
+}
+.css-s{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #25098a;
+  /* padding: 8px; */
+  /* text-align: center; */
+ 
+}
+.php-s{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #6d8fc4;
+  /* padding: 8px; */
+  /* text-align: center; */
+ 
+}
+.vue-s{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #51bf3b;
+  /* padding: 8px; */
+  /* text-align: center; */
+ 
+}
+.vue-s h4{
+  text-align: center;
+  font-size: 26px;
+  color: #FFF;
+  padding-bottom: 2px;
+}
+.php-s h4{
+  text-align: center;
+  font-size: 26px;
+  color: #111;
+  padding-bottom: 2px;
+}
+.css-s h4{
+  text-align: center;
+  font-size: 26px;
+  color: aliceblue;
+  padding-bottom: 2px;
+}
+.skills-c{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+
 
 
 
