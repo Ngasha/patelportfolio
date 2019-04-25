@@ -182,14 +182,26 @@ section{
   /* projects project-n */
   .projects-n{
     display: flex;
-    height: 60vh;
-    background-color: rgba(210, 217, 223, 0.342);
-    /* display: flex; */
+    flex-wrap: row wrap;
+    height: 70vh;
+    background-color: rgba(210, 217, 223, 0.068);
 
   }
 
-
-
+.pro-content{
+  display: flex;
+  flex-wrap: wrap;
+  height: 55vh;
+  text-align: center;
+  padding: 20px;
+  flex-grow: 4;
+}
+.box-container{
+  height: 40vh;
+  background-color: rgba(32, 30, 30, 0.671);
+  color: #FFF;
+  font-family: serif;
+}
 
 
 
