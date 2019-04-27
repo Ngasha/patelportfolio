@@ -209,15 +209,30 @@ h3.about-h {
   display: flex;
   flex-wrap: wrap;
   height: 55vh;
-  background-image: linear-gradient(180deg,hsla(0,0%,10%,.65),hsla(0,0%,10%,.45)),url(lapi.jpg);
+  /* background-image: linear-gradient(180deg,hsla(0,0%,10%,.65),hsla(0,0%,10%,.45)),url(lapi.jpg); */
+  background: linear-gradient(to top right, rgb(67, 26, 216) 50%, rgba(241, 241, 241, 0.46) 50%), linear-gradient(to left, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 50%), url(lapi.jpg);
   text-align: center;
   justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  border-radius: 10px;
+  background-attachment: fixed
+
 }
+   /* .skills-s:after { 
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    background: transparent;
+    background-size: 100% 100%;
+    /* background-image: url(img/bottom-color.png);
+} */
+
 .skills-c{
   text-align: center;
   /* display: flex;
@@ -306,9 +321,16 @@ h3.about-h {
   flex-wrap: wrap;
 
 }
+p.last-p{
+  font-family: 'Lobster', serif;
+  color:#341bc4;
+}
 
-
-
+/* servies i offer */
+.services{
+  height: 70vh;
+  background-color: #FFF;
+}
 
 
 
@@ -355,3 +377,7 @@ h3.about-h {
       text-align: center;
     }
   }
+  @media only screen and (max-width: 767px) and (min-width: 320px){
+
+  }
+
