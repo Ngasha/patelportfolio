@@ -205,18 +205,19 @@ h3.about-h {
   text-decoration-line: underline;
 }
 /* project skills */
+
 .skills-s{
   display: flex;
   flex-wrap: wrap;
-  height: 55vh;
+  height: 70vh;
   /* background-image: linear-gradient(180deg,hsla(0,0%,10%,.65),hsla(0,0%,10%,.45)),url(lapi.jpg); */
   background: linear-gradient(to top right, rgb(67, 26, 216) 50%, rgba(241, 241, 241, 0.46) 50%), linear-gradient(to left, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 50%), url(lapi.jpg);
   text-align: center;
-  justify-content: center;
+  align-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   background-attachment: fixed
 
 }
@@ -242,18 +243,16 @@ h3.about-h {
   justify-content: space-around;
   
 }
-.skills-s h3{
+/* .skills-s h3{
   color: #FFF;
   font-size: 24px;
 
   z-index: 0;
   font-family: monospace;
   text-decoration-line: underline;
-  margin: auto;
-  position: absolute;
-  padding: 6px;
+  /* margin: auto;
+  position: absolute; */
   
-}
 /* skills */
 .java-s{
   height: 120px;
@@ -263,7 +262,51 @@ h3.about-h {
   /* padding: 8px; */
   margin-left: 40px;
   /* text-align: center; */
+
  
+}
+.php-s1{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #ff4800;
+  /* padding: 8px; */
+  margin-left: 40px;
+  /* text-align: center; */
+
+ 
+}
+.skills-item{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+/* .skill h3{
+  
+  padding: 5px;
+} */
+.html-s{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #0099ff;
+  /* padding: 8px; */
+  margin-left: 40px;
+  /* text-align: center; */
+  flex-wrap: nowrap;
+ 
+}
+.php-s1 h4{
+  text-align: center;
+  font-size: 26px;
+  color: aliceblue;
+  padding-bottom: 2px;
+}
+.html-s h4{
+  text-align: center;
+  font-size: 26px;
+  color: aliceblue;
+  padding-bottom: 2px;
 }
 .java-s h4{
   text-align: center;
@@ -344,6 +387,16 @@ p.last-p{
   text-align: center;
   
 }
+.web1 {
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+  border-radius: 30%;
+  margin: auto;
+  /* background-color: rgb(237, 238, 238); */
+  text-align: center;
+  
+}
 img.res-image{
   height: 80px;
   
@@ -383,14 +436,14 @@ img.res-image{
       margin-top:4px;
       background: linear-gradient(to right,#ff8a00,#da1b60);
     } 
-    .skills-s{
+    /* .skills-s{
       display: flex;
       flex-wrap: row wrap;
       height: 60vh;
       background-color:#FFF;
       text-align: center;
       justify-content: center;
-    }
+    } */
     .projects-n{
       display: flex;
       flex-wrap: row wrap;
@@ -401,19 +454,30 @@ img.res-image{
       font-size: 18px;
       
     }
-    .services{
+    .skill {
+      display: inline-block;
+      margin: auto;
+  }
+    .services,
+    .skills-s{
       display: flex;
       flex-wrap: wrap;
       height: fit-content;
     }
   }
   @media only screen and (max-width: 767px) and (min-width: 320px){
-    .services{
+    .skill {
+      display: inline-block;
+      margin: auto;
+  }
+    .services,
+    .skills-s{
       display: flex;
       flex-wrap: wrap;
       height: fit-content;
     }
-    .web{
+    .web,
+    .web1{
       margin-bottom: 10px;
       margin-top: 10px;
     }
