@@ -463,10 +463,12 @@ img.res-image{
       height: 75vh;
       text-align: center;
     }
-    .pro-content{
+    .pro-content {
       font-size: 18px;
-      
-    }
+      margin-right: 10px;
+      height: 90%;
+      margin-left: 10px;
+  }
     .skill {
       display: inline-block;
       margin: auto;
