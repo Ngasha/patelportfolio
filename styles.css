@@ -183,18 +183,31 @@ section{
   .projects-n{
     display: flex;
     flex-wrap: row wrap;
-    height: 60vh;
-    background-color: #f1f0f7;
+    height: 70vh;
+    background-color:#fffcfc;
     /* background: linear-gradient(to right, rgb(176, 204, 204) 43%, rgba(241, 241, 241, 0.966) 60%),
     linear-gradient(to bottom left, rgba(155, 148, 148, 0.877) 54%, rgba(241, 213, 213, 0.815) 63%); */
     text-align: center;
   }
 
-.pro-content{
-  font-size: 22px;
-  height: 55vh;
-  line-height: 1.5;
-  font-family: serif;
+  p.hire-m {
+    height: 36px;
+    width: 100px;
+    margin: auto;
+    border-radius: 24px;
+    border: 2px solid rgb(124, 212, 72);
+}
+  .pro-content {
+    font-size: 22px;
+    border-radius: 12px;
+    height: 60vh;
+    margin: auto;
+    width: 100vh;
+    border: 1px solid #23aa21;
+    line-height: 1.5;
+    box-shadow: 2px 2px 2px rgb(173, 221, 173);
+    font-family: serif;
+    background-color: #ffffff;
 }
 
 
