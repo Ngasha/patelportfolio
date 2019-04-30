@@ -381,6 +381,14 @@ p.last-p{
   font-family: 'Lobster', serif;
   color:#341bc4;
 }
+/* my skills */
+.myskills{
+  height: 70vh;
+  background-color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
 
 /* servies i offer */
 .services{
@@ -397,6 +405,16 @@ p.last-p{
   border-radius: 12px;
   margin: auto;
   background-color: rgb(237, 238, 238);
+  text-align: center;
+  
+}
+.web2 {
+  height: fit-content;
+  width: 196px;
+  padding: 14px;
+  border-radius: 12px;
+  margin: auto;
+  /* background-color: rgb(237, 238, 238); */
   text-align: center;
   
 }
@@ -419,8 +437,34 @@ img.res-image{
 
 }
 
-
-
+.overlay1 {
+  position: relative;
+  width: 167px;
+  height: 98px;
+  margin-bottom: 12px;
+  /* left: unset; */
+  /* right: 0; */
+  /* bottom: 0; */
+  background-color: rgba(0, 0, 0, 0.732);
+  /* z-index: 2; */
+}
+.text1 {
+  position: absolute;
+  /* top: 10%; */
+  /* left: 87%; */
+  margin-left: 40px;
+  font-size: 20px;
+  color: aquamarine;
+  z-index: 3;
+  transform: inherit;
+  -ms-transform: translate(-50%,-50%);
+}
+.php {
+  background-image: url(php.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 
   @media screen and (max-width:959px){
@@ -485,13 +529,18 @@ img.res-image{
       display: inline-block;
       margin: auto;
   }
+  .myskills{
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
     .services,
     .skills-s{
       display: flex;
       flex-wrap: wrap;
       height: fit-content;
     }
-    .web,
+    .web,.web2,
     .web1{
       margin-bottom: 10px;
       margin-top: 10px;
