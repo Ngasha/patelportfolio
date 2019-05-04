@@ -466,6 +466,78 @@ img.res-image{
   background-size: contain;
 }
 
+              /* skillsy */
+.project-wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  align-items: stretch;
+  height: 65vh;
+  margin: 14px;
+}
+.project-content{
+  flex-grow: 1;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 1px solid #23aa21;
+  line-height: 1.5;
+  box-shadow: 2px 2px 2px rgb(173, 221, 173);
+  font-family: serif;
+  background-color: #ffffff;
+  margin-right: 20px;
+  width: 28%;
+  text-align: center;
+}
+
+.skillsy{
+  flex-grow: 2;
+  background-color:red;
+}
+
+.html-skill{
+  height: 35px;
+  width: 75px;
+  background-color: #111;
+  color: white;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 320px){
+  .project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+.project-content {
+  width: initial;
+  height: inherit;
+}
+.skillsy{
+  width: initial;
+  height: inherit;
+  margin-top: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media screen and (max-width:959px){
     .home-wrapper{
