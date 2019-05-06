@@ -490,16 +490,63 @@ img.res-image{
 }
 
 .skillsy{
+  display: flex;
+  flex-wrap: wrap;
   flex-grow: 2;
   background-color:red;
+  justify-content: space-around;
+  text-align: center;
+  width: 25%;
 }
 
-.html-skill{
-  height: 35px;
-  width: 75px;
+.html-skill,
+.css-skill,
+.javascript-skill,
+.jquery-skill,
+.vue-skill{
+  height: 85px;
+  width: 185px;
   background-color: #111;
   color: white;
+  margin: 20px;
 }
+.cont{
+  width: 100%;
+  background-color: #25098a;
+}
+.course{
+  padding: 10px;
+  text-align: right;
+  color: #f1f1f1;
+}
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.javascript {width: 65%; background-color: #f4d836;} /* Red */
+.jQuery {width: 60%; background-color: #808080;}
+.vue {width: 55%; background-color: #90e990;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -513,13 +560,20 @@ img.res-image{
 }
 .project-content {
   width: initial;
+  margin: inherit;
   height: inherit;
 }
 .skillsy{
   width: initial;
-  height: inherit;
   margin-top: 10px;
 }
+/* .home-wrapper{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+
 }
 
 
