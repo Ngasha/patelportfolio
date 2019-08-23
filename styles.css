@@ -410,9 +410,24 @@ p.last-p {
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
+  align-content: space-between;
+  justify-content: center;
+  justify-items: center;
 }
-
+.projects img {
+  height: 150px;
+  width: 260px;
+  border-radius: 14px;
+  border: 1px solid #111;
+  margin: 10px;
+}
+.projects h2 {
+  text-align: center;
+}
+.projects-1 h3.about-h {
+  text-align: center;
+  font-size: 32px;
+}
 /* servies i offer */
 .contacts {
   height: 70vh;
@@ -594,6 +609,12 @@ img.res-image {
   background-position: center;
   background-repeat: no-repeat;
 } */
+
+  .projects-1 {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 959px) {
