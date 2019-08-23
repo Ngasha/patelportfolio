@@ -245,18 +245,28 @@ h3.about-h {
   /* background-image: linear-gradient(180deg,hsla(0,0%,10%,.65),hsla(0,0%,10%,.45)),url(lapi.jpg); */
   background: linear-gradient(
       to top right,
-      rgb(67, 26, 216) 50%,
+      rgb(67, 116, 216) 50%,
       rgba(241, 241, 241, 0.46) 50%
     ),
-    linear-gradient(to left, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 50%),
-    url(lapi.jpg);
+    linear-gradient(to left, rgba(0, 200, 0, 1) 5%, rgba(0, 0, 0, 0) 50%);
   text-align: center;
   align-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /* margin: 0 auto; */
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
   background-attachment: fixed;
+}
+.programing {
+  justify-items: center;
+  font-size: 25px;
+}
+.programing ul {
+  list-style: none;
+  color: #d90cba;
 }
 /* .skills-s:after { 
     content: "";
