@@ -1,143 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?" rel="stylesheet">
-<link href="styles.css" rel="stylesheet" type="text/css">
-</head>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<body>
-
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a href="#about" V-for="message in message">{{message}}</a>
-          </div>
-        </div>
-
-
-        <script src="https://unpkg.com/vue"></script>
-        <script>
-        function openNav() {
-          document.getElementById("myNav").style.width = "100%";
-        }
-
-        function closeNav() {
-          document.getElementById("myNav").style.width = "0%";
-        }
-
-        var myObject = new Vue({
-            el: '.overlay-content',
-            data: {message: ['About','Skills','Team','Contact']}
-        })
-        </script>
-
-        <!-------body section-->
-        <section class="home-wrapper">
-
-
-        </section>
-        <span onclick="openNav()">&#9776; Ng'ash</span>
-        <div class="home-content">
-            <img src="ngash.jpg" alt="ngash" class="ngash-image">
-            <h1 class="title-w">Web Developer</h1>
-        </div>
-      <!-- projects -->
-      <div class="project-wrapper" id="about">
-        <div class="project-content">
-            <h3 class="about-h"><strong></></strong> About me </h3>
-           
-            <p class="quate">I'm an Intermidiate Web Developer. I have pursued a Diploma in Information Technology and with passion in this course, I have gathered the necessary Skills and Knowledge that helps me to Identify, Analyse, Design and Create catchy/ impeccable websites that will help you grow your business.</p>
-            <!-- <p>You imagine and i create a Website that will take your business to the next level</p> -->
-            <p class="last-p">Procastination is another word for Failure</p>
-            <p class="hire-m">Hire me</p>
-        </div>
-        <div class="skillsy">
-          <div class="html-skill">
-              <p>Html</p>
-              <div class="cont">
-               <div class="course html">95%</div>
-              </div>
-          </div>
-          <div class="css-skill">
-              <p>CSS</p>
-              <div class="cont">
-                <div class="course css">95%</div>
-              </div>
-          </div>
-          <div class="javascript-skill">
-              <p>javascript</p>
-              <div class="cont">
-                  <div class="course javascript">75%</div>
-              </div>
-          </div>
-          <div class="jquery-skill">
-              <p>jQuery</p>
-              <div class="cont">
-                  <div class="course jQuery">65%</div>
-                </div>
-          </div>
-          <div class="vue-skill">
-              <p>Vue</p>
-              <div class="cont">
-                  <div class="course vue">55%</div>
-              </div>
-          </div>
-        </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <script src="img/https://cdn.jsdelivr.net/npm/vue"></script>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#about" V-for="message in message">{{ message }}</a>
       </div>
+    </div>
 
-      <!-- projects skills -->
-      <!-- <div class="skills-s">
-          <div class="skill"><h3>Skills </h3></div>
-            <div class="skills-item">
-              <div class="html-s web1"><h4>< /><br/><strong>HTML</strong></h4>
-              </div>
-              <div class="java-s web1"><h4>{}<br/><strong>JS</strong></h4></div>
-              <div class="css-s web1"><h4>{}<br/><strong>CSS</strong></h4></div>
-              <div class="vue-s web1"><h4>{}<br/><strong>Vue</strong></h4></div>
-              <div class="php-s web1"><h4>{}<br/><strong>php</strong></h4></div>
-              <div class="php-s1 web1"><h4>{}<br/><strong>SQL</strong></h4></div>
+    <script src="img/https://unpkg.com/vue"></script>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
 
-            </div>
-        </div> -->
-        <!-- <div class="myskills">
-          
-          <div class="Html web2">
-            <img src="html.png" class="res-image" alt="responsive">
-          </div>
-          <div class="css web2">
-            <img src="css.png" class="res-image" alt="responsive">
-          </div>
-          <div class="javascript web2">
-            <img src="javascript.png" class="res-image" alt="responsive">
-          </div>
-          <div class="Vue web2">
-            <img src="vue.jpg" class="res-image" alt="responsive">
-          </div>
-          <div class="php web2">
-              <div class="text1">
-                  <h2>php</h2>
-              </div> 
-            <div class="overlay1"></div> 
-          </div>
-      </div> -->
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
 
+      var myObject = new Vue({
+        el: ".overlay-content",
+        data: { message: ["About", "Skills", "Team", "Contact"] }
+      });
+    </script>
 
-        <!-- <div class="services">
-          
-            <div class="web-design1 web">
-              <img src="res.png" class="res-image" alt="responsive">
-              <p>Websites have a diffrent view on different device. It dependes with the type you have</p>
-            </div>
-            <div class="web-design2 web">
-              <img src="dev.png" class="res-image" alt="responsive">
-              <p>Websites have a diffrent view on different device. It dependes with the type you have</p>
-            </div>
-            <div class="web-design3 web">
-              <img src="maintain.png" class="res-image" alt="responsive">
-              <p>Websites have a diffrent view on different device. It dependes with the type you have</p>
-            </div>
-        </div>
-             -->
-</body>
+    <!-------body section-->
+    <section class="home-wrapper"></section>
+    <span class="humbuger" onclick="openNav()">&#9776; Ng'ash</span>
+    <div class="home-content">
+      <img src="img/ngash.jpg" alt="ngash" class="ngash-image" />
+      <h1 class="title-w">Web Developer</h1>
+    </div>
+    <!-- ABOUT ME-->
+    <div class="project-wrapper" id="about">
+      <div class="project-content">
+        <h3 class="about-h">About me</h3>
+        <p class="quate">
+          I'm an Intermidiate Web Developer. I have pursued a Diploma in
+          Information Technology and with passion in this course, I have
+          gathered the necessary Skills and Knowledge that helps me to Identify,
+          Analyse, Design and Create catchy/ impeccable websites that will help
+          you grow your business.
+        </p>
+        <!-- <p>You imagine and i create a Website that will take your business to the next level</p> -->
+        <p class="last-p">Procastination is another word for Failure</p>
+        <p class="hire-m">Hire me</p>
+      </div>
+    </div>
+
+    <!-- MYskills -->
+    <div class="skills-s"></div>
+    <!-- MYPROJECTS -->
+
+    <div class="projects"></div>
+    <!-- myCONTACTS -->
+    <div class="contacts"></div>
+  </body>
 </html>
