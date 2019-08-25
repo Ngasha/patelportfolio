@@ -76,7 +76,83 @@ span.humbuger {
     right: 35px;
   }
 }
+/*  skills animate*/
 
+/* Safari 4.0 - 8.0 */
+.div1.de {
+  -webkit-animation-timing-function: linear;
+}
+.div2.de {
+  -webkit-animation-timing-function: ease;
+}
+.div3.de {
+  -webkit-animation-timing-function: ease-in;
+}
+.div4.de {
+  -webkit-animation-timing-function: ease-out;
+}
+.div5.de {
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+/* Standard syntax */
+.div1.de {
+  animation-timing-function: linear;
+}
+.div2.de {
+  animation-timing-function: ease;
+}
+.div3.de {
+  animation-timing-function: ease-in;
+}
+.div4.de {
+  animation-timing-function: ease-out;
+}
+.div5.de {
+  animation-timing-function: ease-in-out;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 300px;
+  }
+}
+.de {
+  display: flex;
+  width: 100px;
+  margin: auto;
+  border-radius: 12px;
+  height: 40px;
+  /* text-align: center; */
+  justify-content: center;
+  top: 58%;
+  margin-bottom: 2px;
+  background-color: blueviolet;
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove 3s infinite;
+  animation: mymove 3s infinite;
+  opacity: 0.8;
+}
+/* #div1 {
+  height: 50px;
+  width: 60px;
+  background: #561cca;
+} */
 /* Position text in the middle of the page/image */
 section.home-wrapper {
   display: flex;
@@ -125,8 +201,6 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  filter: blur(3px);
-  -webkit-filter: blur(1px);
   display: flex;
 }
 img.ngash-image {
@@ -603,6 +677,77 @@ img.res-image {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+  /*  skills animate*/
+
+  /* Safari 4.0 - 8.0 */
+  .div1.de {
+    -webkit-animation-timing-function: linear;
+  }
+  .div2.de {
+    -webkit-animation-timing-function: ease;
+  }
+  .div3.de {
+    -webkit-animation-timing-function: ease-in;
+  }
+  .div4.de {
+    -webkit-animation-timing-function: ease-out;
+  }
+  .div5.de {
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
+  /* Standard syntax */
+  .div1.de {
+    animation-timing-function: linear;
+  }
+  .div2.de {
+    animation-timing-function: ease;
+  }
+  .div3.de {
+    animation-timing-function: ease-in;
+  }
+  .div4.de {
+    animation-timing-function: ease-out;
+  }
+  .div5.de {
+    animation-timing-function: ease-in-out;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 300px;
+    }
+  }
+
+  /* Standard syntax */
+  @keyframes mymove {
+    from {
+      top: 0px;
+    }
+    to {
+      top: 300px;
+    }
+  }
+  .de {
+    display: flex;
+    width: 100px;
+    margin: auto;
+    height: 40px;
+    border-radius: 12px;
+    /* text-align: center; */
+    justify-content: center;
+    top: 58%;
+    margin-bottom: 2px;
+    background-color: blueviolet;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 3s infinite;
+    animation: mymove 3s infinite;
+  }
   .project-wrapper {
     display: flex;
     flex-wrap: wrap;
