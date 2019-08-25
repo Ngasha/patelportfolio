@@ -105,6 +105,18 @@ span.humbuger {
   height: 100%;
   width: 100%;
   background-color: rgba(10, 10, 40, 0.75);
+  animation-name: overa;
+  animation-duration: 4s;
+
+  animation-fill-mode: forwards;
+}
+@keyframes overa {
+  from {
+    background-color: rgba(13, 13, 14, 0.699);
+  }
+  to {
+    background-color: rgba(47, 13, 102, 0.63);
+  }
 }
 section {
   height: 60vh;
@@ -217,6 +229,14 @@ p.hire-m {
   margin: auto;
   border-radius: 24px;
   border: 2px solid rgb(124, 212, 72);
+  transition: width 0.7s, height 0.6s;
+}
+p.hire-m:hover {
+  width: 150px;
+  height: 40px;
+  background: #111;
+  color: #fff;
+  box-shadow: 2px 0 6px #0099ff;
 }
 .pro-content {
   font-size: 22px;
