@@ -116,9 +116,10 @@ span.humbuger {
 @-webkit-keyframes mymove {
   from {
     left: 0px;
+    background-color: #d96f0c;
   }
   to {
-    left: 300px;
+    left: 350px;
   }
 }
 
@@ -126,9 +127,10 @@ span.humbuger {
 @keyframes mymove {
   from {
     left: 0px;
+    background-color: #d96f0c;
   }
   to {
-    left: 300px;
+    left: 350px;
   }
 }
 .de {
@@ -420,76 +422,7 @@ h3.about-h {
   
   padding: 5px;
 } */
-.html-s {
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  background-color: #0099ff;
-  /* padding: 8px; */
-  margin-left: 40px;
-  /* text-align: center; */
-  flex-wrap: nowrap;
-}
-.php-s1 h4 {
-  text-align: center;
-  font-size: 26px;
-  color: aliceblue;
-  padding-bottom: 2px;
-}
-.html-s h4 {
-  text-align: center;
-  font-size: 26px;
-  color: aliceblue;
-  padding-bottom: 2px;
-}
-.java-s h4 {
-  text-align: center;
-  font-size: 26px;
-  color: aliceblue;
-  padding-bottom: 2px;
-}
-.css-s {
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  background-color: #25098a;
-  /* padding: 8px; */
-  /* text-align: center; */
-}
-.php-s {
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  background-color: #6d8fc4;
-  /* padding: 8px; */
-  text-align: center;
-}
-.vue-s {
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  background-color: #51bf3b;
-  /* padding: 8px; */
-  /* text-align: center; */
-}
-.vue-s h4 {
-  text-align: center;
-  font-size: 26px;
-  color: #fff;
-  padding-bottom: 2px;
-}
-.php-s h4 {
-  text-align: center;
-  font-size: 26px;
-  color: #111;
-  padding-bottom: 2px;
-}
-.css-s h4 {
-  text-align: center;
-  font-size: 26px;
-  color: aliceblue;
-  padding-bottom: 2px;
-}
+
 .skills-c {
   display: flex;
   flex-wrap: wrap;
@@ -635,47 +568,6 @@ img.res-image {
   width: 25%;
 }
 
-.html-skill,
-.css-skill,
-.javascript-skill,
-.jquery-skill,
-.vue-skill {
-  height: 85px;
-  width: 185px;
-  background-color: #111;
-  color: white;
-  margin: 20px;
-}
-.cont {
-  width: 100%;
-  background-color: #25098a;
-}
-.course {
-  padding: 10px;
-  text-align: right;
-  color: #f1f1f1;
-}
-.html {
-  width: 90%;
-  background-color: #4caf50;
-} /* Green */
-.css {
-  width: 80%;
-  background-color: #2196f3;
-} /* Blue */
-.javascript {
-  width: 65%;
-  background-color: #f4d836;
-} /* Red */
-.jQuery {
-  width: 60%;
-  background-color: #808080;
-}
-.vue {
-  width: 55%;
-  background-color: #90e990;
-}
-
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   /*  skills animate*/
 
@@ -717,6 +609,7 @@ img.res-image {
   @-webkit-keyframes mymove {
     from {
       left: 0px;
+      background-color: #ce4e1ca9;
     }
     to {
       left: 300px;
