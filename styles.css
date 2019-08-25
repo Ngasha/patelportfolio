@@ -88,7 +88,7 @@ h1.introduce {
   z-index: 3;
   /* height: 28px; */
   font-size: 26px;
-  width: 192px;
+  width: 359px;
   line-height: 1.5;
 }
 h1.introduce::before {
@@ -100,7 +100,7 @@ h1.introduce::before {
   margin-right: auto;
   margin-left: auto;
   display: block;
-  transform: translateY(128px);
+  transform: translateY(150px);
 }
 
 .overlay a {
@@ -844,7 +844,7 @@ img.res-image {
     z-index: 3;
     /* height: 28px; */
     font-size: 26px;
-    width: 192px;
+    width: 360px;
     line-height: 1.5;
   }
   h1.introduce::before {
@@ -856,7 +856,7 @@ img.res-image {
     margin-right: auto;
     margin-left: auto;
     display: block;
-    transform: translateY(128px);
+    transform: translateY(150px);
   }
 }
 /* ==========ABOUTME========= */
