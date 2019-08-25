@@ -173,7 +173,7 @@ h1.introduce::before {
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
   from {
-    float: left;
+    left: 0;
     background-color: #d96f0c;
   }
   to {
@@ -190,7 +190,6 @@ h1.introduce::before {
   }
   to {
     left: 350px;
-    opacity: 0;
   }
 }
 .de {
@@ -201,7 +200,6 @@ h1.introduce::before {
   height: 40px;
   /* text-align: center; */
   justify-content: center;
-  top: 58%;
   font-size: 18px;
   margin-bottom: 2px;
   background-color: blueviolet;
@@ -244,6 +242,8 @@ section.home-wrapper {
   top: 0;
   height: 100%;
   width: 100%;
+  background-attachment: fixed;
+  overflow: hidden;
   background-color: rgba(10, 10, 40, 0.75);
   animation-name: overa;
   animation-duration: 4s;
@@ -716,7 +716,7 @@ img.res-image {
   /* Standard syntax */
   @keyframes mymove {
     from {
-      left: 35px;
+      left: 30px;
       background-color: rgb(235, 104, 17);
       color: #fff;
     }
@@ -724,6 +724,10 @@ img.res-image {
       top: 88px;
       opacity: 0;
     }
+  }
+  .overlaya {
+    background-attachment: fixed;
+    overflow: hidden;
   }
   .de {
     display: flex;
@@ -733,7 +737,6 @@ img.res-image {
     border-radius: 12px;
     /* text-align: center; */
     justify-content: center;
-    top: 58%;
     margin-bottom: 2px;
     background-color: blueviolet;
     font-weight: bold;
