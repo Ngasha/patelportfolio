@@ -28,21 +28,79 @@ body {
   text-align: center;
   margin-top: 30px;
 }
-span.humbuger {
+span.logal {
   color: #fff;
   font-size: 26px;
   cursor: pointer;
   z-index: 1;
-  height: 52px;
+  height: 55px;
+  width: 106px;
   left: 30px;
+  padding: 10px;
+  box-shadow: 14px 4px mediumslateblue;
+  position: absolute;
+  border-radius: 48px 81px;
+  top: 15px;
+  font-family: serif;
+  font-weight: 800;
+  background: linear-gradient(to right, #8a10, #111);
+  /* background: black; */
+}
+h2.hire-ngash {
+  margin: auto;
+  z-index: 0;
+  color: aliceblue;
+  width: 156px;
+  /* margin-left: 196px; */
+  border-radius: 4px;
+  height: 60px;
+  border: 2px solid;
+  margin-bottom: 20px;
+  transform: skewX(10deg);
+}
+h2.hire-ngash:hover {
+  transform: none;
+  background: #c74120;
+  color: #fff;
+  border: none;
+}
+span.humbuger {
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 0;
+  height: 52px;
+  right: 30px;
   padding: 5px;
   position: absolute;
   border-radius: 43px 79px;
   top: 15px;
   font-family: serif;
   font-weight: 800;
-  background: linear-gradient(to right, #ff8a00, #da1b60);
+  /* background: linear-gradient(to right, #ff8a00, #da1b60); */
   /* background: black; */
+}
+/* introduction text */
+h1.introduce {
+  margin-top: 20%;
+  margin-left: 12%;
+  color: #fff;
+  z-index: 3;
+  /* height: 28px; */
+  font-size: 26px;
+  width: 192px;
+  line-height: 1.5;
+}
+h1.introduce::before {
+  content: "";
+  background: #fff;
+  height: 8px;
+  width: 228px;
+  border-radius: 14px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  transform: translateY(128px);
 }
 
 .overlay a {
@@ -172,9 +230,9 @@ section.home-wrapper {
   font-weight: bold;
   border: 3px solid #1b191917;
   position: absolute;
-  top: 25%;
-  left: 32%;
-  height: 192px;
+  top: 38%;
+  left: 52%;
+  height: 184px;
   /* transform: translate(0%, 10%); */
   z-index: 0;
   width: 40%;
@@ -573,6 +631,40 @@ img.res-image {
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   /*  skills animate*/
+  h2.hire-ngash {
+    margin: auto;
+    z-index: 0;
+    color: aliceblue;
+    width: 156px;
+    /* margin-left: 196px; */
+    border-radius: 4px;
+    height: 60px;
+    border: 2px solid;
+    margin-bottom: 20px;
+    transform: skewX(10deg);
+  }
+  h2.hire-ngash:hover {
+    transform: none;
+    background: #c74120;
+    color: #fff;
+    border: none;
+  }
+  span.humbuger {
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 0;
+    height: 52px;
+    right: 30px;
+    padding: 5px;
+    position: absolute;
+    border-radius: 43px 79px;
+    top: 15px;
+    font-family: serif;
+    font-weight: 800;
+    /* background: linear-gradient(to right, #ff8a00, #da1b60); */
+    /* background: black; */
+  }
 
   /* Safari 4.0 - 8.0 */
   .div1.de {
@@ -689,15 +781,7 @@ img.res-image {
     flex-wrap: wrap;
   }
   .home-content {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 16px;
-    height: 212px;
-    width: 60%;
-    max-width: 100%;
-    background-color: rgba(42, 6, 83, 0.432);
-    border-radius: 109px 30px;
-    left: 18%;
+    display: none;
   }
   h1.title-w {
     margin: auto;
@@ -743,26 +827,33 @@ img.res-image {
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 320px) {
-  .skill {
-    display: inline-block;
-    margin: auto;
-  }
-  .projects {
+  section.home-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
+    text-align: center;
+    height: 100%;
+    height: -webkit-fill-available;
   }
-  .contacts,
-  .skills-s {
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
+
+  h1.introduce {
+    margin-top: 54%;
+    margin-left: 12%;
+    color: #fff;
+    z-index: 3;
+    /* height: 28px; */
+    font-size: 26px;
+    width: 192px;
+    line-height: 1.5;
   }
-  .web,
-  .web2,
-  .web1 {
-    margin-bottom: 10px;
-    margin-top: 10px;
+  h1.introduce::before {
+    content: "";
+    background: #fff;
+    height: 8px;
+    width: 228px;
+    border-radius: 14px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    transform: translateY(128px);
   }
 }
 /* ==========ABOUTME========= */
