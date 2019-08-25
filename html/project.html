@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?" rel="stylesheet" />
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="../styles.css" rel="stylesheet" type="text/css" />
   </head>
   <script src="img/https://cdn.jsdelivr.net/npm/vue"></script>
   <body>
@@ -12,10 +12,10 @@
         >&times;</a
       >
       <div class="overlay-content">
-        <a href="index.html">Home</a>
-        <a href="html/about.html">About</a>
-        <a href="html/project.html">Projects</a>
-        <a href="html/contact.html">Contact</a>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
 
@@ -29,13 +29,22 @@
         document.getElementById("myNav").style.width = "0%";
       }
     </script>
-
-    <!-------body section-->
-    <section class="home-wrapper"><div class="overlaya"></div></section>
     <span class="humbuger" onclick="openNav()">&#9776; Ng'ash</span>
-    <div class="home-content">
-      <img src="img/ngash.jpg" alt="ngash" class="ngash-image" />
-      <h1 class="title-w">Web Developer</h1>
-    </div>
+    <body>
+      <!-- MYPROJECTS -->
+
+      <div class="projects">
+        <div class="projects-1">
+          <h3 class="about-h">Projects</h3>
+          <a href="#http://ngasha.github.io/ITati">
+            <img src="../img/project1.PNG" alt="p1" />
+          </a>
+          <a href="#"><img src="../img/project1.PNG" alt="p1"/></a>
+          <a href="#"><img src="../img/project1.PNG" alt="p1"/></a>
+        </div>
+      </div>
+      <!-- myCONTACTS -->
+      <div class="contacts"></div>
+    </body>
   </body>
 </html>

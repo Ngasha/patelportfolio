@@ -78,10 +78,11 @@ span.humbuger {
 }
 
 /* Position text in the middle of the page/image */
-.home-wrapper {
+section.home-wrapper {
   display: flex;
-  flex-wrap: row wrap;
   text-align: center;
+  height: 100%;
+  height: -webkit-fill-available;
 }
 .home-content {
   background-color: rgba(0, 0, 0, 0.611); /* Fallback color */
@@ -107,7 +108,6 @@ span.humbuger {
   background-color: rgba(10, 10, 40, 0.75);
   animation-name: overa;
   animation-duration: 4s;
-
   animation-fill-mode: forwards;
 }
 @keyframes overa {
@@ -115,7 +115,7 @@ span.humbuger {
     background-color: rgba(13, 13, 14, 0.699);
   }
   to {
-    background-color: rgba(47, 13, 102, 0.63);
+    background-color: rgba(45, 8, 105, 0.733);
   }
 }
 section {
