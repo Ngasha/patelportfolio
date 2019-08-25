@@ -115,11 +115,12 @@ span.humbuger {
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
   from {
-    left: 0px;
+    float: left;
     background-color: #d96f0c;
   }
   to {
     left: 350px;
+    opacity: 0;
   }
 }
 
@@ -131,6 +132,7 @@ span.humbuger {
   }
   to {
     left: 350px;
+    opacity: 0;
   }
 }
 .de {
@@ -142,6 +144,7 @@ span.humbuger {
   /* text-align: center; */
   justify-content: center;
   top: 58%;
+  font-size: 18px;
   margin-bottom: 2px;
   background-color: blueviolet;
   font-weight: bold;
@@ -608,22 +611,26 @@ img.res-image {
   /* Safari 4.0 - 8.0 */
   @-webkit-keyframes mymove {
     from {
-      left: 0px;
-      background-color: #ce4e1ca9;
+      left: 25px;
+      background-color: whitesmoke;
+      color: #57be03;
     }
     to {
-      left: 300px;
+      top: 88px;
+      opacity: 0;
     }
   }
 
   /* Standard syntax */
   @keyframes mymove {
     from {
-      top: 0px;
-      background-color: #ce4e1ca9;
+      left: 35px;
+      background-color: rgb(235, 104, 17);
+      color: #fff;
     }
     to {
-      top: 340px;
+      top: 88px;
+      opacity: 0;
     }
   }
   .de {
