@@ -727,9 +727,10 @@ img.res-image {
   @keyframes mymove {
     from {
       top: 0px;
+      background-color: #ce4e1ca9;
     }
     to {
-      top: 300px;
+      top: 340px;
     }
   }
   .de {
