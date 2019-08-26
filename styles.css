@@ -872,7 +872,9 @@ p.play-me {
     font-weight: bold;
     position: relative;
     -webkit-animation: mymove 3s infinite;
-    animation: mymove 3s infinite;
+    -webkit-animation-delay: 3s;
+    animation: mymove 5s infinite;
+    animation-delay: 3s;
   }
   .project-wrapper {
     display: flex;
