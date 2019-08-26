@@ -956,11 +956,10 @@ p.play-me {
 
   h1.introduce {
     margin-top: 54%;
-    margin-left: 5%;
     color: #fff;
     z-index: 3;
     /* height: 28px; */
-    font-size: 26px;
+    font-size: 24px;
     width: 360px;
     line-height: 1.5;
   }
@@ -973,6 +972,6 @@ p.play-me {
     margin-right: auto;
     margin-left: auto;
     display: block;
-    transform: translateY(150px);
+    transform: translateY(145px);
   }
 }
