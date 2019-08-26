@@ -45,6 +45,43 @@ span.logal {
   font-weight: 800;
   background: linear-gradient(to right, #8a10, #111);
   /* background: black; */
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 0.6s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 0.6s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0% {
+    left: 30px;
+    top: 15px;
+  }
+  25% {
+    left: 200px;
+    top: 15px;
+  }
+  100% {
+    left: 30px;
+    top: 15px;
+  }
+}
+
+/* Standard syntax */
+@keyframes example {
+  0% {
+    left: 30px;
+    top: 15px;
+  }
+  25% {
+    left: 200px;
+    top: 15px;
+  }
+  100% {
+    left: 30px;
+    top: 15px;
+  }
 }
 h2.hire-ngash {
   margin: auto;
@@ -52,11 +89,30 @@ h2.hire-ngash {
   color: aliceblue;
   width: 156px;
   /* margin-left: 196px; */
-  border-radius: 4px;
+  border-radius: 24px;
+  padding: 14px;
   height: 60px;
   border: 2px solid;
   margin-bottom: 20px;
-  transform: skewX(10deg);
+  box-shadow: 4px 0 8px #1ac22c;
+  animation-name: breathe;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1.2);
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes breathe {
+  0% {
+    height: 60px;
+    width: 156px;
+  }
+  25% {
+    height: 66px;
+    width: 160px;
+  }
+  100% {
+    height: 60px;
+    width: 156px;
+  }
 }
 h2.hire-ngash:hover {
   transform: none;
@@ -83,7 +139,7 @@ span.humbuger {
 /* introduction text */
 h1.introduce {
   margin-top: 20%;
-  margin-left: 12%;
+  margin-left: 5%;
   color: #fff;
   z-index: 3;
   /* height: 28px; */
@@ -629,6 +685,62 @@ img.res-image {
   width: 25%;
 }
 
+/* ==========ABOUTME=========
+=======================================
+          about me               
+======================================= */
+h3.about-h::before {
+  content: "";
+  background: #c74120;
+  height: 5px;
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  transform: translateY(48px);
+}
+h3.about-h::after {
+  content: "";
+  background: #57be03;
+  height: 10px;
+  width: 45px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(3px);
+}
+
+.overlaya-about {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: block;
+  width: 100%;
+  background-attachment: fixed;
+  overflow: hidden;
+  background-color: rgba(2, 2, 14, 0.986);
+}
+img.btn-cheza {
+  height: 100px;
+  display: flex;
+  margin: auto;
+  margin-top: 26%;
+  width: 100px;
+  /* background: antiquewhite; */
+  border-radius: 50%;
+  z-index: 4;
+}
+p.play-me {
+  color: aliceblue;
+  text-align: center;
+  font-family: cursive;
+  font-size: 22px;
+}
+/* ================================================
+              MEDIA QUERIES
+              ======================================= */
+
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   /*  skills animate*/
   h2.hire-ngash {
@@ -637,11 +749,11 @@ img.res-image {
     color: aliceblue;
     width: 156px;
     /* margin-left: 196px; */
-    border-radius: 4px;
+    border-radius: 28px;
     height: 60px;
+    padding: 14px;
     border: 2px solid;
     margin-bottom: 20px;
-    transform: skewX(10deg);
   }
   h2.hire-ngash:hover {
     transform: none;
@@ -766,10 +878,10 @@ img.res-image {
     line-height: 1.2;
   }
   /* .home-wrapper{
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+              } */
 
   .projects-1 {
     display: flex;
@@ -798,14 +910,7 @@ img.res-image {
     margin-top: 4px;
     background: linear-gradient(to right, #ff8a00, #da1b60);
   }
-  /* .skills-s{
-      display: flex;
-      flex-wrap: row wrap;
-      height: 60vh;
-      background-color:#FFF;
-      text-align: center;
-      justify-content: center;
-    } */
+
   .projects-n {
     display: flex;
     flex-wrap: row wrap;
@@ -822,12 +927,6 @@ img.res-image {
     display: inline-block;
     margin: auto;
   }
-  .contacts,
-  .skills-s {
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-  }
 }
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   section.home-wrapper {
@@ -839,7 +938,7 @@ img.res-image {
 
   h1.introduce {
     margin-top: 54%;
-    margin-left: 12%;
+    margin-left: 5%;
     color: #fff;
     z-index: 3;
     /* height: 28px; */
@@ -858,26 +957,4 @@ img.res-image {
     display: block;
     transform: translateY(150px);
   }
-}
-/* ==========ABOUTME========= */
-h3.about-h::before {
-  content: "";
-  background: #c74120;
-  height: 5px;
-  width: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  transform: translateY(48px);
-}
-h3.about-h::after {
-  content: "";
-  background: #57be03;
-  height: 10px;
-  width: 45px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 40px;
-  display: block;
-  transform: translateY(3px);
 }
