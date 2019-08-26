@@ -742,6 +742,24 @@ p.play-me {
               ======================================= */
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+  /* about me */
+  img.btn-cheza {
+    height: 100px;
+    display: flex;
+    margin: auto;
+    margin-top: 62%;
+    width: 100px;
+    /* background: antiquewhite; */
+    border-radius: 50%;
+    z-index: 4;
+  }
+  p.play-me {
+    color: aliceblue;
+    text-align: center;
+    font-family: cursive;
+    font-size: 22px;
+    margin: 28px;
+  }
   /*  skills animate*/
   h2.hire-ngash {
     margin: auto;
