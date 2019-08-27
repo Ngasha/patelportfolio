@@ -121,8 +121,8 @@ h2.hire-ngash:hover {
   border: none;
 }
 span.humbuger {
-  color: #fff;
-  font-size: 26px;
+  color: #111;
+  font-size: 28px;
   cursor: pointer;
   z-index: 0;
   height: 52px;
@@ -233,8 +233,7 @@ h1.introduce::before {
     background-color: #d96f0c;
   }
   to {
-    left: 350px;
-    opacity: 0;
+    top: 40%;
   }
 }
 
@@ -245,7 +244,8 @@ h1.introduce::before {
     background-color: #d96f0c;
   }
   to {
-    left: 350px;
+    top: 40%;
+    background-color: #5f0b70;
   }
 }
 .de {
@@ -479,7 +479,8 @@ h3.about-h {
 }
 .programing ul {
   list-style: none;
-  color: #d90cba;
+  color: #fff;
+  text-align: justify;
 }
 /* .skills-s:after { 
     content: "";
@@ -546,7 +547,8 @@ h3.about-h {
 }
 p.last-p {
   font-family: "Lobster", serif;
-  color: #341bc4;
+  color: #c4431b;
+  text-align: center;
 }
 /* my skills */
 .projects {
@@ -598,21 +600,6 @@ p.last-p {
   /* background-color: rgb(237, 238, 238); */
   text-align: center;
 }
-.web1 {
-  height: 150px;
-  width: 150px;
-  padding: 20px;
-  border-radius: 30%;
-  margin: auto;
-  /* background-color: rgb(237, 238, 238); */
-  text-align: center;
-}
-img.res-image {
-  height: 80px;
-}
-.web p {
-  font-size: 18px;
-}
 
 .overlay1 {
   position: relative;
@@ -649,7 +636,6 @@ img.res-image {
   justify-content: space-around;
   flex-flow: wrap;
   align-items: stretch;
-  height: 65vh;
   margin: 10px;
 }
 .project-content {
@@ -663,6 +649,7 @@ img.res-image {
   background-color: #ffffff;
   margin-right: 20px;
   width: 58%;
+  margin-top: 40px;
   text-align: center;
 }
 .skillsy {
@@ -742,6 +729,27 @@ p.play-me {
               ======================================= */
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+  .project-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    align-items: stretch;
+    margin: 10px;
+  }
+  .project-content {
+    /* flex-grow: 1; */
+    font-size: 22px;
+    /* border-radius: 12px; */
+    /* border: 1px solid #23aa21; */
+    line-height: 1.5;
+    /* box-shadow: 2px 2px 2px rgb(173, 221, 173); */
+    font-family: serif;
+    background-color: #ffffff;
+    margin-right: 20px;
+    width: 58%;
+    margin-top: 40px;
+    text-align: center;
+  }
   /* about me */
   img.btn-cheza {
     height: 100px;
@@ -780,7 +788,7 @@ p.play-me {
     border: none;
   }
   span.humbuger {
-    color: #fff;
+    color: #111;
     font-size: 26px;
     cursor: pointer;
     z-index: 0;
@@ -833,26 +841,27 @@ p.play-me {
   /* Safari 4.0 - 8.0 */
   @-webkit-keyframes mymove {
     from {
-      left: 25px;
-      background-color: whitesmoke;
+      left: 0;
       color: #57be03;
     }
     to {
-      top: 88px;
+      top: 40%;
       opacity: 0;
+      background-color: rgb(184, 17, 235);
     }
   }
 
   /* Standard syntax */
   @keyframes mymove {
     from {
-      left: 30px;
+      left: 0;
       background-color: rgb(235, 104, 17);
       color: #fff;
     }
     to {
-      top: 88px;
+      top: 40%;
       opacity: 0;
+      background-color: rgb(184, 17, 235);
     }
   }
   .overlaya {
@@ -883,19 +892,17 @@ p.play-me {
   }
   .project-content {
     width: initial;
-    margin: inherit;
-    height: inherit;
   }
   .skillsy {
     width: initial;
     margin-top: 10px;
   }
   h3.about-h {
-    margin: 0;
+    padding-top: 30px;
   }
   p.quate {
-    font-size: 22px;
-    line-height: 1.2;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   /* .home-wrapper{
                 background-attachment: fixed;
