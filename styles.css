@@ -123,9 +123,11 @@ h2.hire-ngash:hover {
 span.humbugery {
   color: #fff;
 }
+span.humbuger {
+  color: #111;
+}
 span.humbuger,
 span.humbugery {
-  color: #111;
   font-size: 28px;
   cursor: pointer;
   z-index: 0;
@@ -794,9 +796,11 @@ p.play-me {
   span.humbugery {
     color: #fff;
   }
+  span.humbuger {
+    color: #111;
+  }
   span.humbuger,
   span.humbugery {
-    color: #111;
     font-size: 26px;
     cursor: pointer;
     z-index: 0;
