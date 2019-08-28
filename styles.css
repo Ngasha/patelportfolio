@@ -736,23 +736,27 @@ p.play-me {
 ===================================================== */
 .over-page {
   display: flex;
-  margin: 0;
+  flex-wrap: wrap;
   padding: 0;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: rgba(7, 4, 146, 0.973);
 }
+.over-page h3 {
+  text-align: center;
+}
 .loader {
   position: relative;
   display: flex;
 }
+
 .loader span {
   width: 50px;
   height: 300px;
   margin: 0 20px;
   background: rgba(48, 212, 204, 0.973);
-  animation: animater 1.4s linear infinite;
+  animation: animater 1.4s linear 6;
 }
 .loader span:nth-child(1) {
   animation-delay: 0s;

@@ -28,18 +28,28 @@
       function closeNav() {
         document.getElementById("myNav").style.width = "0%";
       }
+      function openAbout(){
+        document.getElementById("over-page").style.display = "none";
+      }
     </script>
     
-    <body class="over-page">
-      <div class="loader">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <body>
+      <div class="over-page" id="over-page" onclick="openAbout()">
+          <h3>Tap/click screen to view projects</h3>
+        <div class="loader">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+  
+        
+      
+    </div>
 
 
       <!-- MYPROJECTS -->
