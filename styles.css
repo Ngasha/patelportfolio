@@ -814,7 +814,7 @@ p.play-me {
   .loader span {
     width: 20px;
     height: 200px;
-    margin: 0 10px;
+    margin: 0 16px;
     background: rgba(48, 212, 204, 0.973);
     animation: animater 1.4s linear infinite;
   }
