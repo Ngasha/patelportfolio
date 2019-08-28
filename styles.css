@@ -730,11 +730,112 @@ p.play-me {
   font-family: cursive;
   font-size: 22px;
 }
+
+/* ===============================================
+======================LOADER========================
+===================================================== */
+.over-page {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(7, 4, 146, 0.973);
+}
+.loader {
+  position: relative;
+  display: flex;
+}
+.loader span {
+  width: 50px;
+  height: 300px;
+  margin: 0 20px;
+  background: rgba(48, 212, 204, 0.973);
+  animation: animater 1.4s linear infinite;
+}
+.loader span:nth-child(1) {
+  animation-delay: 0s;
+}
+.loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.loader span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.loader span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.loader span:nth-child(6) {
+  animation-delay: 1s;
+}
+.loader span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+@keyframes animater {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateX(-50px) scale(1);
+  }
+  50% {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transform: translateX(0) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    transform: translateX(50px) scale(1);
+    opacity: 0;
+  }
+}
+
 /* ================================================
               MEDIA QUERIES
               ======================================= */
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+  .over-page {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(7, 4, 146, 0.973);
+  }
+  .loader {
+    position: relative;
+    display: flex;
+  }
+  .loader span {
+    width: 20px;
+    height: 200px;
+    margin: 0 10px;
+    background: rgba(48, 212, 204, 0.973);
+    animation: animater 1.4s linear infinite;
+  }
+  @keyframes animater {
+    0% {
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transform: translateX(-50px) scale(1);
+    }
+    50% {
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      transform: translateX(0) scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+      transform: translateX(50px) scale(1);
+      opacity: 0;
+    }
+  }
+
   .project-wrapper {
     display: flex;
     justify-content: space-around;
