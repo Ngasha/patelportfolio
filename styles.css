@@ -85,15 +85,15 @@ span.logal {
 }
 h2.hire-ngash {
   margin: auto;
-  z-index: 0;
+  /* z-index: 0; */
   color: aliceblue;
   width: 156px;
-  /* margin-left: 196px; */
+  margin-top: 196px;
   border-radius: 24px;
   padding: 14px;
   height: 60px;
   border: 2px solid;
-  margin-bottom: 20px;
+  /* margin-bottom: 32px; */
   box-shadow: 4px 0 8px #1ac22c;
   animation-name: breathe;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1.2);
@@ -144,27 +144,33 @@ span.humbugery {
 }
 /* introduction text */
 h1.introduce {
-  margin-top: 20%;
-  margin-left: 5%;
+  margin-left: 20%;
   color: #fff;
   z-index: 3;
+  /* padding: 20px 10px; */
   /* height: 28px; */
   font-size: 26px;
-  width: 359px;
+  width: 388px;
   line-height: 1.5;
 }
 h1.introduce::before {
   content: "";
   background: #fff;
-  height: 8px;
-  width: 228px;
+  height: 245px;
+  width: 8px;
   border-radius: 14px;
-  margin-right: auto;
+  /* margin-right: auto; */
   margin-left: auto;
   display: block;
-  transform: translateY(150px);
+  transform: translateY(162px);
 }
-
+.get-me a {
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 14px;
+  font-size: 18px;
+}
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -298,6 +304,42 @@ section.home-wrapper {
   width: 40%;
   border-radius: 150px 19px;
   padding: 16px;
+}
+
+.get-me {
+  height: 100px;
+  width: 250px;
+  background: #57be03;
+  z-index: 1;
+  margin: auto;
+  margin-right: 15%;
+  margin-top: -12%;
+  text-align: center;
+  padding: 20px;
+  float: right;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: beige;
+  color: rgb(230, 7, 7);
+  text-decoration: none;
+}
+.fa-whatsapp {
+  background: green;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
 .overlaya {
   position: absolute;
@@ -807,7 +849,59 @@ h3.skip-show {
               MEDIA QUERIES
               ======================================= */
 
-@media only screen and (max-width: 767px) and (min-width: 320px) {
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  section.home-wrapper {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    height: -webkit-fill-available;
+  }
+
+  h1.introduce {
+    margin-top: 45%;
+    margin-left: auto;
+    color: #fff;
+    /* margin: auto; */
+    /* z-index: 3; */
+    /* padding: 20px 10px; */
+    /* height: 28px; */
+    font-size: 26px;
+    /* width: 388px; */
+    line-height: 1.5;
+  }
+  h1.introduce::before {
+    content: "";
+    background: #fff;
+    height: 245px;
+    width: 8px;
+    border-radius: 14px;
+    /* margin-right: auto; */
+    margin-left: auto;
+    display: block;
+    transform: translateY(162px);
+  }
+  .home-content {
+    margin: auto;
+    left: 30%;
+    top: 60%;
+    display: flex;
+  }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991.98px) {
   .over-page {
     display: flex;
     margin: 0;
@@ -1087,23 +1181,36 @@ h3.skip-show {
   }
 
   h1.introduce {
-    margin-top: 54%;
+    margin-top: 45%;
+    margin-left: auto;
     color: #fff;
-    z-index: 3;
+    /* margin: auto; */
+    /* z-index: 3; */
+    /* padding: 20px 10px; */
     /* height: 28px; */
-    font-size: 24px;
-    width: 360px;
+    font-size: 26px;
+    /* width: 388px; */
     line-height: 1.5;
+  }
+  .get-me {
+    height: 100px;
+    width: 250px;
+    background: #57be03;
+    /* z-index: 1; */
+    /* margin: auto; */
+    margin-right: 54px;
+    margin-top: 30px;
+    /* float: right; */
   }
   h1.introduce::before {
     content: "";
     background: #fff;
-    height: 8px;
-    width: 228px;
+    height: 45px;
+    width: 8px;
     border-radius: 14px;
     margin-right: auto;
     margin-left: auto;
     display: block;
-    transform: translateY(145px);
+    transform: translateY(163px);
   }
 }
