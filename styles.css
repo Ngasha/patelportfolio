@@ -739,6 +739,8 @@ p.play-me {
 h3.skip-show {
   cursor: pointer;
   color: aliceblue;
+  position: absolute;
+  font-size: 28px;
 }
 .over-page {
   display: flex;
