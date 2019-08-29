@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?" rel="stylesheet" />
     <link href="../styles.css" rel="stylesheet" type="text/css" />
   </head>
@@ -28,9 +29,18 @@
       function closeNav() {
         document.getElementById("myNav").style.width = "0%";
       }
-      function openAbout(){
-        document.getElementById("over-page").style.display = "none";
-      }
+      // function openAbout(){
+      //   document.getElementById("over-page").style.display = "none";
+      // }
+      $(document).ready(function(){
+        $(".project-hider").hide();
+      });
+      $(document).ready(function(){
+        $(".skip-show").click(function(){
+          $(".over-page").hide(1000);
+          $(".project-hider").show(500);
+        })
+      });
     </script>
     
     <body>
@@ -44,9 +54,9 @@
           <span></span>
           <span></span>
         </div>
-        <h3>skip></h3>
+        <h3 class="skip-show">skip></h3>
     </div>
-
+<div class="project-hider">
       <!-- MYPROJECTS -->
       <span class="humbuger" onclick="openNav()">&#9776;</span>
       <div class="projects">
@@ -61,5 +71,6 @@
       </div>
      
       <div class="contacts"></div>
+</div>
   </body>
 </html>

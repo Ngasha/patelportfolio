@@ -736,6 +736,11 @@ p.play-me {
 /* ===============================================
 ======================LOADER========================
 ===================================================== */
+h3.skip-show {
+  cursor: pointer;
+  margin-top: auto;
+  color: aliceblue;
+}
 .over-page {
   display: flex;
   flex-wrap: wrap;
@@ -745,10 +750,6 @@ p.play-me {
   min-height: 100vh;
   background: rgba(7, 4, 146, 0.973);
   overflow: hidden;
-}
-.over-page h3 {
-  margin-top: auto;
-  color: aliceblue;
 }
 .loader {
   position: relative;
