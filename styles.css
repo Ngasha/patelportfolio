@@ -1178,13 +1178,12 @@ h3.skip-show {
 
   h1.introduce {
     margin-top: 45%;
-    margin-left: auto;
     color: #fff;
     /* margin: auto; */
     /* z-index: 3; */
     /* padding: 20px 10px; */
     /* height: 28px; */
-    font-size: 26px;
+    font-size: 24px;
     /* width: 388px; */
     line-height: 1.5;
   }
@@ -1207,6 +1206,6 @@ h3.skip-show {
     margin-right: auto;
     margin-left: auto;
     display: block;
-    transform: translateY(163px);
+    transform: translateY(155px);
   }
 }
