@@ -698,7 +698,6 @@ p.last-p {
   font-family: serif;
   background-color: #ffffff;
   margin-right: 20px;
-  width: 58%;
   margin-top: 40px;
   text-align: center;
 }
@@ -1106,9 +1105,6 @@ h3.skip-show {
     display: flex;
     flex-wrap: wrap;
     height: 80vh;
-  }
-  .project-content {
-    width: initial;
   }
   .skillsy {
     width: initial;
