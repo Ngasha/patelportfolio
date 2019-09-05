@@ -146,10 +146,11 @@ span.humbugery {
 h1.introduce {
   margin-left: 20%;
   color: #fff;
+  font-family: "Alegreya Sans", sans-serif;
   z-index: 3;
   /* padding: 20px 10px; */
   /* height: 28px; */
-  font-size: 26px;
+  font-size: 24px;
   width: 388px;
   line-height: 1.5;
 }
@@ -1207,20 +1208,20 @@ h3.skip-show {
     color: #fff;
     /* margin: auto; */
     /* z-index: 3; */
-    /* padding: 20px 10px; */
+    padding-right: 16px;
     /* height: 28px; */
     font-size: 24px;
     /* width: 388px; */
-    line-height: 1.5;
+    font-weight: 300;
   }
   .get-me {
-    height: 100px;
-    width: 250px;
-    background: #57be03;
+    height: 92px;
+    width: 248px;
+    background: rgba(0, 0, 0, 0.45);
     /* z-index: 1; */
     /* margin: auto; */
-    margin-right: 54px;
-    margin-top: 30px;
+
+    margin-top: 66px;
     /* float: right; */
   }
   h1.introduce::before {
