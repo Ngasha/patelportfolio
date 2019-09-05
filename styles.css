@@ -601,7 +601,6 @@ p.last-p {
 }
 /* my skills */
 .projects {
-  height: 70vh;
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
@@ -610,11 +609,12 @@ p.last-p {
   justify-items: center;
 }
 .projects img {
-  height: 150px;
+  height: 400px;
   width: 260px;
   border-radius: 14px;
   border: 1px solid #111;
   margin: 10px;
+  box-shadow: 12px 10px 6px rgb(182, 184, 202);
 }
 .projects h2 {
   text-align: center;
@@ -776,6 +776,38 @@ p.play-me {
 }
 
 /* ===============================================
+======================projects========================
+===================================================== */
+.projects-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: inherit;
+  justify-items: center;
+}
+h2.about-h::before {
+  content: "";
+  background: #ec1919;
+  height: 5px;
+  width: 150px;
+  margin-right: auto;
+  font-family: "Alegreya Sans", sans-serif;
+  margin-left: auto;
+  display: block;
+  transform: translateY(48px);
+}
+h2.about-h::after {
+  content: "";
+  background: #757972;
+  height: 10px;
+  width: 38px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  display: block;
+  transform: translateY(12px);
+}
+
+/* ===============================================
 ======================LOADER========================
 ===================================================== */
 h3.skip-show {
@@ -791,7 +823,7 @@ h3.skip-show {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: rgba(7, 4, 146, 0.973);
+  background: rgba(0, 0, 0, 0.973);
   overflow: hidden;
 }
 .loader {
@@ -803,7 +835,7 @@ h3.skip-show {
   width: 50px;
   height: 300px;
   margin: 0 20px;
-  background: rgba(48, 212, 204, 0.973);
+  background: rgba(40, 41, 41, 0.973);
   animation: animater 1.4s linear 6;
 }
 .loader span:nth-child(1) {
