@@ -854,10 +854,36 @@ h3.skip-show {
 
 /*Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {
+  @keyframes overa {
+    from {
+      background-color: rgba(13, 13, 14, 0.699);
+    }
+    to {
+      background-color: rgba(5, 8, 5, 0.43);
+    }
+  }
+  section {
+    height: 60vh;
+    background-image: url("img/peter4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+  }
 }
 
 /* Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
+  section {
+    height: 60vh;
+    background-image: url("img/peter4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+  }
   section.home-wrapper {
     display: flex;
     text-align: center;
