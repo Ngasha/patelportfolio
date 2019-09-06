@@ -41,7 +41,7 @@ span.logal {
   color: #fff;
   font-size: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 0;
   height: 55px;
   width: 106px;
   left: 30px;
