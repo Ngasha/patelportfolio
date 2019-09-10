@@ -97,7 +97,7 @@ h2.hire-ngash {
   /* z-index: 0; */
   color: aliceblue;
   width: 156px;
-  margin-top: 200px;
+  margin-top: 240px;
   border-radius: 24px;
   padding: 14px;
   margin-left: 30%;
@@ -1127,7 +1127,7 @@ section {
 }
 
 /* Large devices (desktops, less than 1200px)*/
-@media (min-width: 1199.98px) {
+@media (min-width: 1024px) {
 	img.portfo-img{
 		display: none;
 	}
