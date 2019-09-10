@@ -8,6 +8,9 @@ body {
 * {
   box-sizing: border-box;
 }
+h2.about-h {
+    text-align: center;
+}
 .overlay {
   height: 100%;
   width: 0;
