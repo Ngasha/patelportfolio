@@ -1,73 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Patrick+Hand&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap"
-      rel="stylesheet"
-    />
-    <link href="styles.css" rel="stylesheet" type="text/css" />
-  </head>
-  <script src="img/https://cdn.jsdelivr.net/npm/vue"></script>
-  <body>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <div class="overlay-content">
-        <a href="index.html">Home</a>
-        <a href="html/about.html">About</a>
-        <a href="html/project.html">Projects</a>
-        <a href="html/contact.html">Contact</a>
-      </div>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Patrick+Hand&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<script src="img/https://cdn.jsdelivr.net/npm/vue"></script>
+
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="html/about.html">About</a>
+      <a href="html/project.html">Projects</a>
     </div>
+  </div>
 
-    <script src="img/https://unpkg.com/vue"></script>
-    <script>
-      function openNav() {
-        document.getElementById("myNav").style.width = "100%";
-      }
+  <script src="img/https://unpkg.com/vue"></script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
 
-      function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-      }
-    </script>
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
 
-    <!-------body section-->
-    <section class="home-wrapper">
-      <div class="overlaya">
-        <div class="landing">
-          <h1 class="introduce">
-            Hello, I'm Peter...A front-End web developer. Welcome to my
-            Portfolio.
-          </h1>
-		<img src="img/tablet.PNG" alt="portfolio" class="portfo1-img" />
-          <img src="img/porto.PNG" alt="portfolio" class="portfo-img" />
-          <div class="get-me">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-google"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a class="fa fa-whatsapp"></a>
-          </div>
+  <!-------body section-->
+  <section class="home-wrapper">
+    <div class="overlaya">
+      <div class="landing">
+        <h1 class="introduce">
+          Hello, I'm Peter...A front-End web developer. Welcome to my
+          Portfolio.
+        </h1>
+        <img src="img/tablet.PNG" alt="portfolio" class="portfo1-img" />
+        <img src="img/porto.PNG" alt="portfolio" class="portfo-img" />
+        <div class="get-me">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a class="fa fa-whatsapp"></a>
         </div>
-        <h2 class="hire-ngash">Lets Go</h2>
       </div>
-      <span class="logal">Ng'ash</span>
-      <span class="humbugery" onclick="openNav()">&#9776;</span>
-    </section>
-  </body>
+      <h2 class="hire-ngash">Lets Go</h2>
+    </div>
+    <span class="logal">Ng'ash</span>
+    <span class="humbugery" onclick="openNav()">&#9776;</span>
+  </section>
+</body>
+
 </html>

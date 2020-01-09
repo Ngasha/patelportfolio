@@ -47,7 +47,7 @@ span.logal {
   z-index: 0;
   height: 55px;
   width: 106px;
-  left: 30px;
+  /* left: 30px; */
   padding: 10px;
   box-shadow: 9px 2px mediumslateblue;
   position: absolute;
@@ -63,11 +63,12 @@ span.logal {
   animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: 0.6s;
+  left:15px;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
   0% {
-    left: 30px;
+    left: 5px;
     top: 15px;
   }
   25% {
@@ -75,7 +76,7 @@ span.logal {
     top: 15px;
   }
   100% {
-    left: 30px;
+    left: 5px;
     top: 15px;
   }
 }
@@ -83,7 +84,7 @@ span.logal {
 /* Standard syntax */
 @keyframes example {
   0% {
-    left: 30px;
+    left: 5px;
     top: 15px;
   }
   25% {
@@ -91,7 +92,7 @@ span.logal {
     top: 15px;
   }
   100% {
-    left: 30px;
+    left: 5px;
     top: 15px;
   }
 }
@@ -411,6 +412,11 @@ h1.title-w {
 }
 
 /* about ngash about-n */
+h1 {
+  background: linear-gradient(to bottom right, rgba(204, 86, 40, 0.897), rgb(95, 231, 16));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .wrapper-about {
   display: flex;
   flex-wrap: row wrap;
@@ -519,19 +525,16 @@ h3.about-h {
   flex-wrap: wrap;
   height: 70vh;
   /* background-image: linear-gradient(180deg,hsla(0,0%,10%,.65),hsla(0,0%,10%,.45)),url(lapi.jpg); */
-  background: linear-gradient(
-      to top right,
-      rgb(67, 116, 216) 50%,
-      rgba(241, 241, 241, 0.46) 50%
-    ),
-    linear-gradient(to left, rgba(0, 200, 0, 1) 5%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient( to top right, rgb(67, 116, 216) 50%, rgba(241, 241, 241, 0.46) 50% ), linear-gradient(to left, rgba(0, 200, 0, 1) 5%, rgba(0, 0, 0, 0) 50%);
   text-align: center;
   align-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* margin: 0 auto; */
+  margin-top: 42%;
+  z-index: -2;
   align-content: center;
+  position: relative;
   justify-items: center;
   justify-content: center;
   background-attachment: fixed;
@@ -704,17 +707,17 @@ p.last-p {
   margin: 10px;
 }
 .project-content {
-  /* flex-grow: 1; */
+  position: absolute;
+  top: 60px;
+  height: 90vh;
+  width: 54%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0 ,0.7);
   font-size: 22px;
-  /* border-radius: 12px; */
-  /* border: 1px solid #23aa21; */
   line-height: 1.5;
-  /* box-shadow: 2px 2px 2px rgb(173, 221, 173); */
   font-family: serif;
   background-color: #ffffff;
-  margin-right: 20px;
-  margin-top: 40px;
   text-align: center;
+  border-radius: 14px;
 }
 .skillsy {
   display: flex;
@@ -761,7 +764,13 @@ h3.about-h::after {
   display: block;
   transform: translateY(3px);
 }
-
+p.quate {
+  /* height: 100px; */
+  width: 70%;
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
 .overlaya-about {
   position: absolute;
   top: 0;
@@ -1194,7 +1203,7 @@ section {
   .project-content {
     /* flex-grow: 1; */
     font-size: 22px;
-    /* border-radius: 12px; */
+        /* border-radius: 12px; */
     /* border: 1px solid #23aa21; */
     line-height: 1.5;
     /* box-shadow: 2px 2px 2px rgb(173, 221, 173); */
@@ -1364,6 +1373,7 @@ section {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
   }
+
   /* .home-wrapper{
                 background-attachment: fixed;
                 background-position: center;
@@ -1381,6 +1391,26 @@ section {
   .home-wrapper {
     display: flex;
     flex-wrap: wrap;
+  }
+p.quate {
+    font-size: 1rem;
+    height: 200px;
+    width: 90%;
+    padding: 5px;
+    line-height: 1.5;
+}
+.skills-s {
+  position: relative;
+  display: flex;
+  margin-top: 165%;
+  flex-wrap: wrap;
+  /* z-index: auto; */
+}
+  .project-content{
+    background: red;
+    min-width: 92%;
+    top: 18%;
+    height: 80vh;
   }
 	img.portfo1-img{
 		display: none;
