@@ -159,9 +159,8 @@ span.humbugery {
 /* introduction text */
 h1.introduce {
   margin-left: 20%;
-  color: #fff;
   font-family: "Alegreya Sans", sans-serif;
-  z-index: 3;
+  
   /* padding: 20px 10px; */
   /* height: 28px; */
   font-size: 24px;
@@ -412,7 +411,7 @@ h1.title-w {
 }
 
 /* about ngash about-n */
-h1 {
+h1.stack {
   background: linear-gradient(to bottom right, rgba(204, 86, 40, 0.897), rgb(95, 231, 16));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
