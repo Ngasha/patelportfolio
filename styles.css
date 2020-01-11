@@ -954,7 +954,7 @@ header{
     top: 0;
 }
 nav{
-    min-height: 10vh;
+    min-height: 18vh;
     margin: auto;
     width: 90%;
     display: flex;
@@ -965,7 +965,7 @@ nav{
 	.project-content{
 /*		background: red;*/
 		width: 96%;
-		height: 82vh;
+		height: 88vh;
 		margin-top: 34px
 	}
 	p.quate{
