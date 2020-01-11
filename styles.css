@@ -764,6 +764,9 @@ h3.about-h::after {
   display: block;
   transform: translateY(3px);
 }
+.skills-s{
+	list-style: none;
+}
 p.quate {
   /* height: 100px; */
   width: 70%;
