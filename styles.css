@@ -952,9 +952,9 @@ h3.skip-show {
 header{
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
     top: 0;
-	height: 15vh;
 }
 nav{
+	height: 15vh;
     margin: auto;
     width: 90%;
     display: flex;
@@ -965,7 +965,7 @@ nav{
 	.project-content{
 /*		background: red;*/
 		width: 96%;
-		height: 84vh;
+		height: 88vh;
 		top: auto;
 	}
 	p.quate{
