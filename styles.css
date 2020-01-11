@@ -542,7 +542,7 @@ h3.about-h {
 .programing {
   justify-items: center;
   font-size: 25px;
-}
+}F
 .programing ul {
   list-style: none;
   color: #fff;
@@ -767,9 +767,7 @@ h3.about-h::after {
 p.quate {
   /* height: 100px; */
   width: 70%;
-  border-radius: 8px;
   margin: auto;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 .overlaya-about {
   position: absolute;
@@ -947,91 +945,7 @@ h3.skip-show {
     display: flex;
   }
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
-	
-	.skills-s{
-		background: red;
-	}
-	.project-content{
-		background: yellow;
-		height: 230px;
-	}
-}
-/* Medium devices (tablets, less than 992px)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-  section {
-    height: 60vh;
-    background-image: url("img/peter4.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-  }
-	img.portfo1-img{
-		display: none;
-	}
-  section.home-wrapper {
-    display: flex;
-    text-align: center;
-    height: 100%;
-    height: -webkit-fill-available;
-  }
-	.portfo-img {
-    position: absolute;
-    float: right;
-    right: 68px;
-    top: 28%;
-    border-radius: 45px;
-}
-  h1.introduce {
-    color: #fff;
-	  margin-top: 24%;
-	  margin-left: 10%;
-    padding: 20px 0px;
-    font-size: 24px;
-     width: 330px; 
-  }
-  h1.introduce::before {
-    content: "";
-    background: #fff;
-    height: 245px;
-    width: 8px;
-    border-radius: 14px;
-    /* margin-right: auto; */
-    margin-left: auto;
-    display: block;
-    transform: translateY(162px);
-  }
-	.get-me{
-		background: rgba(1,1,1,0.7);
-		margin-top: 5%;
-	}
-  .home-content {
-    margin: auto;
-    left: 30%;
-    top: 60%;
-    display: flex;
-  }
-	h2.hire-ngash {
-    margin: auto;
-    /* z-index: 0; */
-    color: aliceblue;
-    width: 156px;
-    margin-top: 40%;
-    border-radius: 24px;
-    padding: 14px;
-    margin-left: 42%;
-    height: 60px;
-    border: 2px solid;
-    /* margin-bottom: 32px; */
-    box-shadow: 4px 0 8px #1ac22c;
-    animation-name: breathe;
-    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1.2);
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-}
+
 /* Large devices (tablets, less than 1200px)*/
 @media (min-width:991.98px) and (max-width: 1024px) {
 h1.introduce {
@@ -1162,8 +1076,82 @@ section {
 	}
 }
 
-
+/* Medium devices (tablets, less than 992px)*/
 @media only screen and (min-width: 767px) and (max-width: 991.98px) {
+  section {
+    height: 60vh;
+    background-image: url("img/peter4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+  }
+	img.portfo1-img{
+		display: none;
+	}
+  section.home-wrapper {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    height: -webkit-fill-available;
+  }
+	.portfo-img {
+    position: absolute;
+    float: right;
+    right: 68px;
+    top: 28%;
+    border-radius: 45px;
+}
+  h1.introduce {
+    color: #fff;
+	  margin-top: 24%;
+	  margin-left: 10%;
+    padding: 20px 0px;
+    font-size: 24px;
+     width: 330px; 
+  }
+  h1.introduce::before {
+    content: "";
+    background: #fff;
+    height: 245px;
+    width: 8px;
+    border-radius: 14px;
+    /* margin-right: auto; */
+    margin-left: auto;
+    display: block;
+    transform: translateY(162px);
+  }
+	.get-me{
+		background: rgba(1,1,1,0.7);
+		margin-top: 5%;
+	}
+  .home-content {
+    margin: auto;
+    left: 30%;
+    top: 60%;
+    display: flex;
+  }
+	h2.hire-ngash {
+    margin: auto;
+    /* z-index: 0; */
+    color: aliceblue;
+    width: 156px;
+    margin-top: 40%;
+    border-radius: 24px;
+    padding: 14px;
+    margin-left: 42%;
+    height: 60px;
+    border: 2px solid;
+    /* margin-bottom: 32px; */
+    box-shadow: 4px 0 8px #1ac22c;
+    animation-name: breathe;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1.2);
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+	
   .over-page {
     display: flex;
     margin: 0;
@@ -1209,20 +1197,7 @@ section {
     align-items: stretch;
     margin: 10px;
   }
-  .project-content {
-    /* flex-grow: 1; */
-    font-size: 22px;
-        /* border-radius: 12px; */
-    /* border: 1px solid #23aa21; */
-    line-height: 1.5;
-    /* box-shadow: 2px 2px 2px rgb(173, 221, 173); */
-    font-family: serif;
-    background-color: #ffffff;
-    margin-right: 20px;
-    width: 58%;
-    margin-top: 40px;
-    text-align: center;
-  }
+
   /* about me */
   img.btn-cheza {
     height: 100px;
@@ -1270,7 +1245,7 @@ section {
   }
   span.humbuger,
   span.humbugery {
-    font-size: 26px;
+    font-size: 28px;
     cursor: pointer;
     z-index: 0;
     height: 52px;
@@ -1278,7 +1253,7 @@ section {
     padding: 5px;
     position: absolute;
     border-radius: 43px 79px;
-    top: 15px;
+    top: 60px;
     font-family: serif;
     font-weight: 800;
     /* background: linear-gradient(to right, #ff8a00, #da1b60); */
@@ -1377,23 +1352,62 @@ section {
   }
   h3.about-h {
     padding-top: 30px;
+	  font-size: 2em;
   }
   p.quate {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  /* .home-wrapper{
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-              } */
-
   .projects-1 {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
   }
+	
+p.quate {
+    font-size: 2rem;
+	border: none;
+    width: 90%;
+    padding: 5px;
+    line-height: 1.5;
+}
+	span.logal{
+		top:60px;
+		left: 68px;
+	}
+.project-content{
+    background: #fff;
+	border-top: none;
+    min-width: 92%;
+    height: 80vh;
+	top:28%;
+  }
+	
+h3.about-h::before {
+    content: "";
+    background: #c74120;
+    height: 5px;
+    width: 215px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    transform: translateY(64px);
+}
+h3.about-h::after {
+    content: "";
+    background: #57be03;
+    height: 10px;
+    width: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(-10px);
+}	
+	.skills-s ul{
+		list-style: none;
+	}
 }
 
 @media screen and (max-width: 959px) {
@@ -1404,26 +1418,7 @@ section {
     display: flex;
     flex-wrap: wrap;
   }
-p.quate {
-    font-size: 1rem;
-    height: 200px;
-    width: 90%;
-    padding: 5px;
-    line-height: 1.5;
-}
-.skills-s {
-  position: relative;
-  display: flex;
-  margin-top: 165%;
-  flex-wrap: wrap;
-  /* z-index: auto; */
-}
-  .project-content{
-    background: bisque;
-    min-width: 92%;
-    top: 18%;
-    height: 80vh;
-  }
+
 	img.portfo1-img{
 		display: none;
 	}
