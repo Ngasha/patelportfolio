@@ -764,7 +764,7 @@ h3.about-h::after {
   display: block;
   transform: translateY(3px);
 }
-.skills-s{
+.skills-s ul{
 	list-style: none;
 }
 p.quate {
