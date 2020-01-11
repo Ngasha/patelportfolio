@@ -947,7 +947,16 @@ h3.skip-show {
     display: flex;
   }
 }
-
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+	.skills-s{
+		background: red;
+	}
+	.project-content{
+		background: yellow;
+		height: 230px;
+	}
+}
 /* Medium devices (tablets, less than 992px)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   section {
@@ -1388,6 +1397,9 @@ section {
 }
 
 @media screen and (max-width: 959px) {
+	h2.hire-ngash {
+		margin-top: 198px;
+	}
   .home-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -1461,7 +1473,7 @@ p.quate {
     color: #fff;
     /* margin: auto; */
     /* z-index: 3; */
-    margin-left: -4%;
+    margin-left: auto;
     /* height: 28px; */
     font-size: 24px;
     /* width: 388px; */
