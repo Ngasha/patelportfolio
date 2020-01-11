@@ -944,21 +944,35 @@ h3.skip-show {
     background-attachment: fixed;
     display: flex;
   }
+	
+
+header{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    top: 0;
+}
+nav{
+    min-height: 10vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 	.project-content{
 /*		background: red;*/
 		width: 96%;
-		position: absolute;
-		margin-top: 22%;
+		height: 82vh;
+		margin-top: 34px
 	}
 	p.quate{
 		width: 98%;
-		font-size: 24px;
+		font-size: 22px;
 		line-height: 1.5;
 		padding: 10px;
 	}
 	.skills-s{
 /*		background: blue;*/
-		position: relative;
 		margin-top: 175%;
 		bottom: 0;
 	}
