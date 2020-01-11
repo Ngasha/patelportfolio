@@ -944,6 +944,27 @@ h3.skip-show {
     background-attachment: fixed;
     display: flex;
   }
+	.project-content{
+/*		background: red;*/
+		width: 96%;
+		position: absolute;
+		margin-top: 22%;
+	}
+	p.quate{
+		width: 98%;
+		font-size: 24px;
+		line-height: 1.5;
+		padding: 10px;
+	}
+	.skills-s{
+/*		background: blue;*/
+		position: relative;
+		margin-top: 175%;
+		bottom: 0;
+	}
+	.skills-s ul{
+		list-style: none;
+	}
 }
 
 /* Large devices (tablets, less than 1200px)*/
@@ -1077,7 +1098,7 @@ section {
 }
 
 /* Medium devices (tablets, less than 992px)*/
-@media only screen and (min-width: 767px) and (max-width: 991.98px) {
+@media only screen and (min-width: 767.9px) and (max-width: 991.98px) {
   section {
     height: 60vh;
     background-image: url("img/peter4.jpg");
