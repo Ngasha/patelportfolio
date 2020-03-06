@@ -1534,3 +1534,118 @@ h3.about-h::after {
     transform: translateY(155px);
   }
 }
+
+/*the cube projects*/
+
+			.transform{
+				background: radial-gradient(circle,rgba(0,0,0.2),transparent,rgba(0,0,0.2));
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				overflow: hidden;
+				align-items: center;
+			}
+			.cover-card{
+				position: relative;
+				width: 1050px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				transform: skewY(-10deg);
+			}
+			
+			.cover-card .card:before{
+				content: '';
+				position: absolute;
+				top: -15px;
+				left: 0;
+				width: 100%;
+				height: 15px;
+				background: #bbaeee;
+				transform-origin: bottom;
+				transform: skewX(45deg);
+				transition: 0.5s;
+			}
+			.cover-card .card:after{
+				content: '';
+				position: absolute;
+				top: -15px;
+				left: -15px;
+				width: 15px;
+				height: 50%;
+				background: #bbaeee;
+				transform-origin: left;
+				transform: skewY(45deg);
+				transition: 0.5s;
+				border-bottom: 200px solid #d9d9d9;
+			}
+			.cover-card .card .content-card:before{
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 400px;
+				background: linear-gradient(transparent,transparent,rgba(0,0,0,0.2));
+				transform-origin: bottom;
+				transform: skewX(45deg);
+				transition: .5s;
+				pointer-events: none;
+				z-index: -1;
+			}
+			.cover-card .card:hover .content-card:before{
+				transform: translateY(40px) skewX(45deg);
+				filter: blur(5px);
+				opacity: 0.5;
+			}
+			.cover-card .card:nth-child(1){
+				z-index: 3;
+			}
+			.cover-card .card:nth-child(2){
+				z-index: 2;
+			}
+			.cover-card .card:nth-child(3){
+				z-index: 1;
+			}
+			.cover-card .card{
+				position: relative;
+				width: 300px;
+				height: 400px;
+				background: #fff;
+				transition: 0.5s;
+				margin: auto;
+				justify-content: space-between;
+			}
+			.cover-card .card:hover{
+				transform: translateY(-40px);
+			}
+			
+			.cover-card .card .screen{
+				position: relative;
+				width: 300px;
+				height: 200px;
+				background: #bbaeee;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+			}
+			
+			.cover-card .card .screen img{
+				max-width: 230px;
+				margin: auto;
+			}
+			.cover-card .card .screen h3{
+				position: relative;
+				color: #fff;
+				margin: auto;
+			}
+			.cover-card .card .content-card{
+				position: relative;
+				width: 100%;
+				height: 200px;
+				padding: 20px;
+				color: #777;
+				background: #fff8dc;
+				text-align: center;
+			}
+		 
